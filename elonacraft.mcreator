@@ -1,0 +1,307 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "ECell",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "e_cell",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "RailGunShotOnEntities",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rail_gun_shot_on_entities",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "RailGunWhenUsed",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rail_gun_when_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "RailGun",
+      "type": "gun",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rail_gun",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "ElonaCraft",
+      "type": "tab",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "elona_craft"
+    },
+    {
+      "name": "RailGunShotOnBlocks",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rail_gun_shot_on_blocks",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "RailGunUseable",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rail_gun_useable",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "ECellCrafting",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "e_cell_crafting",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "LaserGunShotOnEntities",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "laser_gun_shot_on_entities",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "LaserGunWhenUsed",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "laser_gun_when_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "LaserGun",
+      "type": "gun",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "laser_gun",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "LaserGunRecipe",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "laser_gun_recipe",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "RailGunRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rail_gun_recipe",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "Putit",
+      "type": "mob",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "putit",
+      "path": "~/NPCs"
+    },
+    {
+      "name": "Bullet",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bullet",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GunRecoil",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gun_recoil",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "laser",
+      "files": [
+        "laser"
+      ],
+      "category": "master",
+      "subtitle": "LaserGun:Shoot"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "subtitles.laser": "LaserGun:Shoot",
+      "item.elonacraft.putit_spawn_egg": "Putit Spawn Egg",
+      "entity.elonacraft.putit": "Putit",
+      "itemGroup.tabelona_craft": "ElonaCraft",
+      "item.elonacraft.laser_gun": "Laser Gun",
+      "item.elonacraft.e_cell": "E Cell",
+      "item.elonacraft.rail_gun": "Rail Gun"
+    },
+    "zh_cn": {
+      "subtitles.laser": "¼¤¹âÇ¹£ºÉä»÷",
+      "item.elonacraft.putit_spawn_egg": "Éú³É ²¨Çò",
+      "entity.elonacraft.putit": "²¨Çò",
+      "itemGroup.tabelona_craft": "ElonaCraft",
+      "item.elonacraft.laser_gun": "¼¤¹âÇ¹",
+      "item.elonacraft.e_cell": "¼¤¹âµ¯",
+      "item.elonacraft.rail_gun": "¡ï¡¶µç´ÅÅÚ¡·"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Weapons",
+        "children": []
+      },
+      {
+        "name": "NPCs",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "elonacraft",
+    "modName": "ElonaCraft",
+    "version": "0.0.1pre",
+    "author": "Tapio, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "com.plr.elonacraft",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 18,
+  "_type": "tab",
+  "definition": {
+    "name": "ElonaCraft",
+    "icon": {
+      "value": "CUSTOM:RailGun"
+    },
+    "showSearch": false
+  }
+}

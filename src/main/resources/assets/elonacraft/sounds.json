@@ -1,0 +1,12 @@
+{
+  "laser": {
+    "category": "master",
+    "subtitle": "subtitles.laser",
+    "sounds": [
+      {
+        "name": "elonacraft:laser",
+        "stream": false
+      }
+    ]
+  }
+}

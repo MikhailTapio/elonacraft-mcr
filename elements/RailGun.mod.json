@@ -1,0 +1,52 @@
+{
+  "_fv": 18,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "railgun",
+    "customModelName": "Normal",
+    "name": "Rail Gun",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:ElonaCraft"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "CUSTOM:laser"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "RailGunWhenUsed"
+    },
+    "useCondition": {
+      "name": "RailGunUseable"
+    },
+    "bulletPower": 10.0,
+    "bulletDamage": 0.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:ECell"
+    },
+    "bulletModel": "Modelcell",
+    "customBulletModelTexture": "cell.png",
+    "onBulletHitsBlock": {
+      "name": "RailGunShotOnBlocks"
+    },
+    "onBulletHitsPlayer": {
+      "name": "GunRecoil"
+    },
+    "onBulletHitsEntity": {
+      "name": "RailGunShotOnEntities"
+    }
+  }
+}

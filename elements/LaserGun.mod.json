@@ -1,0 +1,49 @@
+{
+  "_fv": 18,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "laser_gun",
+    "customModelName": "Normal",
+    "name": "Laser Gun",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:ElonaCraft"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "CUSTOM:laser"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "LaserGunWhenUsed"
+    },
+    "useCondition": {
+      "name": "RailGunUseable"
+    },
+    "bulletPower": 10.0,
+    "bulletDamage": 0.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:ECell"
+    },
+    "bulletModel": "Modelcell",
+    "customBulletModelTexture": "cell.png",
+    "onBulletHitsPlayer": {
+      "name": "GunRecoil"
+    },
+    "onBulletHitsEntity": {
+      "name": "LaserGunShotOnEntities"
+    }
+  }
+}
