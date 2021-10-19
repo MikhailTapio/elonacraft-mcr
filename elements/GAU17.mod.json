@@ -1,0 +1,43 @@
+{
+  "_fv": 24,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "gau17",
+    "customModelName": "Normal",
+    "name": "GAU-17",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:ElonaCraft"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "CUSTOM:gun"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "GAU17Toggle"
+    },
+    "useCondition": {
+      "name": "CommonGunUseable"
+    },
+    "bulletPower": 0.0,
+    "bulletDamage": 1.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Bullet"
+    },
+    "bulletModel": "Modelbullet",
+    "customBulletModelTexture": "bulletmodel.png"
+  }
+}

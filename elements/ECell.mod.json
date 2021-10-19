@@ -1,9 +1,9 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "energy_cell.png",
+    "texture": "energy_cell",
     "customModelName": "Normal",
     "name": "E Cell",
     "rarity": "COMMON",
@@ -28,6 +28,7 @@
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 64
+    "inventoryStackSize": 64,
+    "hasDispenseBehavior": false
   }
 }

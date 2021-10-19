@@ -5,15 +5,9 @@ import net.minecraft.entity.Entity;
 
 import java.util.Map;
 
-import com.plr.elonacraft.ElonacraftModElements;
 import com.plr.elonacraft.ElonacraftMod;
 
-@ElonacraftModElements.ModElement.Tag
-public class LaserGunShotOnEntitiesProcedure extends ElonacraftModElements.ModElement {
-	public LaserGunShotOnEntitiesProcedure(ElonacraftModElements instance) {
-		super(instance, 8);
-	}
-
+public class LaserGunShotOnEntitiesProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

@@ -57,7 +57,7 @@
     },
     {
       "name": "RailGun",
-      "type": "gun",
+      "type": "rangeditem",
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
@@ -113,7 +113,7 @@
       "ids": {},
       "registry_name": "rail_gun_useable",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -175,7 +175,7 @@
     },
     {
       "name": "LaserGun",
-      "type": "gun",
+      "type": "rangeditem",
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
@@ -205,7 +205,7 @@
     },
     {
       "name": "Putit",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
@@ -232,13 +232,228 @@
       "ids": {},
       "registry_name": "gun_recoil",
       "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "CommonGunUseable",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "common_gun_useable",
+      "metadata": {
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "PutitSpawn",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "putit_spawn",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NPCs"
+    },
+    {
+      "name": "GAU17",
+      "type": "rangeditem",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gau_17",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GAU17Toggle",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gau_17_toggle",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GAU17Firing",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gau_17_firing",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GAU17ActivatedRequirement",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gau_17_activated_requirement",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GAU17Activated",
+      "type": "overlay",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gau_17_activated",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GAU17InactivatedRequirement",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gau_17_inactivated_requirement",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GAU17Inactivated",
+      "type": "overlay",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gau_17_inactivated",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GAU17ASuppressedR",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gau_17_a_suppressed_r",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GAU17ASuppressed",
+      "type": "overlay",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gau_17_a_suppressed",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GAU17ISuppressedP",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gau_17_i_suppressed_p",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GAU17ISuppressed",
+      "type": "overlay",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gau_17_i_suppressed",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "BulletProduction",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bullet_production",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "Gau17Crafting",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gau_17_crafting",
+      "path": "~/Weapons"
     }
   ],
   "variable_elements": [],
@@ -250,26 +465,40 @@
       ],
       "category": "master",
       "subtitle": "LaserGun:Shoot"
+    },
+    {
+      "name": "gun",
+      "files": [
+        "gun"
+      ],
+      "category": "master",
+      "subtitle": "Gun:Shoot"
     }
   ],
   "language_map": {
     "en_us": {
       "subtitles.laser": "LaserGun:Shoot",
+      "subtitles.gun": "Gun:Shoot",
       "item.elonacraft.putit_spawn_egg": "Putit Spawn Egg",
       "entity.elonacraft.putit": "Putit",
       "itemGroup.tabelona_craft": "ElonaCraft",
       "item.elonacraft.laser_gun": "Laser Gun",
+      "item.elonacraft.gau_17": "GAU-17",
       "item.elonacraft.e_cell": "E Cell",
-      "item.elonacraft.rail_gun": "Rail Gun"
+      "item.elonacraft.rail_gun": "Rail Gun",
+      "item.elonacraft.bullet": "Bullet"
     },
     "zh_cn": {
       "subtitles.laser": "¼¤¹âÇ¹£ºÉä»÷",
+      "subtitles.gun": "Ç¹£ºÉä»÷",
       "item.elonacraft.putit_spawn_egg": "Éú³É ²¨Çò",
       "entity.elonacraft.putit": "²¨Çò",
       "itemGroup.tabelona_craft": "ElonaCraft",
       "item.elonacraft.laser_gun": "¼¤¹âÇ¹",
+      "item.elonacraft.gau_17": "GAU-17 Minigun ¸Ä",
       "item.elonacraft.e_cell": "¼¤¹âµ¯",
-      "item.elonacraft.rail_gun": "¡ï¡¶µç´ÅÅÚ¡·"
+      "item.elonacraft.rail_gun": "¡ï¡¶µç´ÅÅÚ¡·",
+      "item.elonacraft.bullet": "×Óµ¯"
     }
   },
   "foldersRoot": {
@@ -288,20 +517,21 @@
   "workspaceSettings": {
     "modid": "elonacraft",
     "modName": "ElonaCraft",
-    "version": "0.0.1pre",
+    "version": "0.0.2",
     "author": "Tapio, MCreator",
     "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "license": "GNU General Public License version 2 (GPLv2)",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "elonaicon",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about   Refer to PC Game Elona",
     "modElementsPackage": "com.plr.elonacraft",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100118117
+  "mcreatorVersion": 202100235315
 }

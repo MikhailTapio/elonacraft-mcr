@@ -1,0 +1,33 @@
+{
+  "group": "elonacraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "345",
+    " 78"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_block"
+    },
+    "3": {
+      "item": "minecraft:stone_button"
+    },
+    "4": {
+      "item": "minecraft:iron_block"
+    },
+    "5": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "7": {
+      "item": "minecraft:lever"
+    },
+    "8": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result": {
+    "item": "elonacraft:gau_17",
+    "count": 1
+  }
+}

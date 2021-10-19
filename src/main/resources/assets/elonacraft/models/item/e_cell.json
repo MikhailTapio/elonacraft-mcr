@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "elonacraft:items/energy_cell.png"
+    "layer0": "elonacraft:items/energy_cell"
   }
 }

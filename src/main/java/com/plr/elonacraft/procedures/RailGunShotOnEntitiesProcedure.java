@@ -8,15 +8,9 @@ import net.minecraft.entity.Entity;
 
 import java.util.Map;
 
-import com.plr.elonacraft.ElonacraftModElements;
 import com.plr.elonacraft.ElonacraftMod;
 
-@ElonacraftModElements.ModElement.Tag
-public class RailGunShotOnEntitiesProcedure extends ElonacraftModElements.ModElement {
-	public RailGunShotOnEntitiesProcedure(ElonacraftModElements instance) {
-		super(instance, 2);
-	}
-
+public class RailGunShotOnEntitiesProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

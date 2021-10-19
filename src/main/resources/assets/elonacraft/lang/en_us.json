@@ -1,9 +1,12 @@
 {
   "subtitles.laser": "LaserGun:Shoot",
+  "subtitles.gun": "Gun:Shoot",
   "item.elonacraft.putit_spawn_egg": "Putit Spawn Egg",
   "entity.elonacraft.putit": "Putit",
   "itemGroup.tabelona_craft": "ElonaCraft",
   "item.elonacraft.laser_gun": "Laser Gun",
+  "item.elonacraft.gau_17": "GAU-17",
   "item.elonacraft.e_cell": "E Cell",
-  "item.elonacraft.rail_gun": "Rail Gun"
+  "item.elonacraft.rail_gun": "Rail Gun",
+  "item.elonacraft.bullet": "Bullet"
 }

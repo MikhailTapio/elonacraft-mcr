@@ -46,6 +46,7 @@ public class ElonacraftModElements {
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public ElonacraftModElements() {
 		sounds.put(new ResourceLocation("elonacraft", "laser"), new net.minecraft.util.SoundEvent(new ResourceLocation("elonacraft", "laser")));
+		sounds.put(new ResourceLocation("elonacraft", "gun"), new net.minecraft.util.SoundEvent(new ResourceLocation("elonacraft", "gun")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("elonacraft").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

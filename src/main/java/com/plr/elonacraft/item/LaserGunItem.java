@@ -36,7 +36,6 @@ import java.util.HashMap;
 import com.plr.elonacraft.procedures.RailGunUseableProcedure;
 import com.plr.elonacraft.procedures.LaserGunWhenUsedProcedure;
 import com.plr.elonacraft.procedures.LaserGunShotOnEntitiesProcedure;
-import com.plr.elonacraft.procedures.GunRecoilProcedure;
 import com.plr.elonacraft.itemgroup.ElonaCraftItemGroup;
 import com.plr.elonacraft.entity.renderer.LaserGunRenderer;
 import com.plr.elonacraft.ElonacraftModElements;
@@ -130,27 +129,12 @@ public class LaserGunItem extends ElonacraftModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(ECellItem.block, (int) (1));
+			return new ItemStack(ECellItem.block);
 		}
 
 		@Override
 		protected ItemStack getArrowStack() {
 			return null;
-		}
-
-		@Override
-		public void onCollideWithPlayer(PlayerEntity entity) {
-			super.onCollideWithPlayer(entity);
-			Entity sourceentity = this.func_234616_v_();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			World world = this.world;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				GunRecoilProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override
@@ -162,6 +146,7 @@ public class LaserGunItem extends ElonacraftModElements.ModElement {
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			World world = this.world;
+			Entity imediatesourceentity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -177,6 +162,7 @@ public class LaserGunItem extends ElonacraftModElements.ModElement {
 			double z = this.getPosZ();
 			World world = this.world;
 			Entity entity = this.func_234616_v_();
+			Entity imediatesourceentity = this;
 			if (this.inGround) {
 				this.remove();
 			}

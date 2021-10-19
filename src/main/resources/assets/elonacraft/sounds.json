@@ -8,5 +8,15 @@
         "stream": false
       }
     ]
+  },
+  "gun": {
+    "category": "master",
+    "subtitle": "subtitles.gun",
+    "sounds": [
+      {
+        "name": "elonacraft:gun",
+        "stream": false
+      }
+    ]
   }
 }

@@ -1,9 +1,12 @@
 {
   "subtitles.laser": "激光枪：射击",
+  "subtitles.gun": "枪：射击",
   "item.elonacraft.putit_spawn_egg": "生成 波球",
   "entity.elonacraft.putit": "波球",
   "itemGroup.tabelona_craft": "ElonaCraft",
   "item.elonacraft.laser_gun": "激光枪",
+  "item.elonacraft.gau_17": "GAU-17 Minigun 改",
   "item.elonacraft.e_cell": "激光弹",
-  "item.elonacraft.rail_gun": "★《电磁炮》"
+  "item.elonacraft.rail_gun": "★《电磁炮》",
+  "item.elonacraft.bullet": "子弹"
 }

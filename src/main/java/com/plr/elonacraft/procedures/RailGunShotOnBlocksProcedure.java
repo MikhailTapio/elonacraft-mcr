@@ -6,15 +6,9 @@ import net.minecraft.world.Explosion;
 
 import java.util.Map;
 
-import com.plr.elonacraft.ElonacraftModElements;
 import com.plr.elonacraft.ElonacraftMod;
 
-@ElonacraftModElements.ModElement.Tag
-public class RailGunShotOnBlocksProcedure extends ElonacraftModElements.ModElement {
-	public RailGunShotOnBlocksProcedure(ElonacraftModElements instance) {
-		super(instance, 5);
-	}
-
+public class RailGunShotOnBlocksProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
@@ -40,8 +34,10 @@ public class RailGunShotOnBlocksProcedure extends ElonacraftModElements.ModEleme
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (world instanceof World && !((World) world).isRemote) {
-			((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 4, Explosion.Mode.NONE);
+		if ((Math.random() <= 0.1)) {
+			if (world instanceof World && !((World) world).isRemote) {
+				((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 4, Explosion.Mode.NONE);
+			}
 		}
 	}
 }

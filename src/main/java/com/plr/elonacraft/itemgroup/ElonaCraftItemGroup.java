@@ -22,7 +22,7 @@ public class ElonaCraftItemGroup extends ElonacraftModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(RailGunItem.block, (int) (1));
+				return new ItemStack(RailGunItem.block);
 			}
 
 			@OnlyIn(Dist.CLIENT)

@@ -1,13 +1,14 @@
 modLoader="javafml"
 loaderVersion="[36,)"
-license="Academic Free License v3.0"
+license="GNU General Public License version 2 (GPLv2)"
 
 [[mods]]
 modId="elonacraft"
-version="0.0.1pre"
+version="0.0.2"
 displayName="ElonaCraft"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
+credits="Created using mod maker MCreator - https://mcreator.net/about   Refer to PC Game Elona"
 displayURL="https://mcreator.net"
+logoFile="logo.png"
 authors="Tapio, MCreator"
 
 [[dependencies.elonacraft]]
